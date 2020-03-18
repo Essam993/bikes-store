@@ -1,0 +1,59 @@
+	<div class="pt_categorytop catlist">
+	<div class="ma-title"><h3><span><?php echo __('shop by categories') ?></span></h3></div>
+
+	<div class="container-inner">
+		<div class="content">
+		<?php
+
+		$catListTop = $block->getCatListTop();
+		$rows = 1;
+		$i = 0;
+		$last = count($catListTop);
+		foreach ($catListTop as $catTop) {
+			//echo "<pre>"; print_r($catTop->getData()); echo "</pre>"; 
+			$thumb_nail_url = $block -> getThumbUrl($catTop->getThumbPopular());
+			?>
+			<?php if($i++%$rows==0) { ?> <div class="product_row"> <?php } ?>
+				<div class="catgrid">
+					<div class="catlist_images">
+						<a href="<?php echo $catTop->getUrl() ?>">
+							<img class="thumb" src="<?php echo $thumb_nail_url; ?>" alt="<?php echo $catTop->getName(); ?>" />
+						</a>
+					</div>
+					<div class="catlist_name">
+						<h4 class="name"><a  href="<?php echo $catTop->getUrl() ?>">
+							<?php echo $catTop->getName() ?>
+						</a></h4>
+					
+					</div>
+				</div>
+			<?php if($i%$rows==0 || $i == count($catListTop)) { ?> </div> <?php }?>
+		   <?php
+		}
+		?>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+require([
+  "jquery",
+  "owlcarousel/minjs"
+ ], function($,owlCarousel){
+	
+   $(".pt_categorytop .content").owlCarousel({ 
+		autoPlay : false,
+		slideSpeed : 500,
+		navigation : false,
+		stopOnHover : true,
+		pagination : true,
+		items : 6,
+		itemsDesktop : [1199,5],
+		itemsDesktopSmall : [991,4],
+		itemsTablet: [767,3],
+		itemsMobile : [479,2],
+		addClassActive : true,
+		scrollPerPage:false
+   });
+   
+});
+</script>   

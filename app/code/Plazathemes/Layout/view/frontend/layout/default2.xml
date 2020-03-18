@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+
+    <body>
+		<referenceContainer name="page.wrapper">
+            <block class="Plazathemes\Layout\Block\Layout" name="my_header" template="html/header.phtml" before="main.content">
+                <block class="Magento\Framework\View\Element\Html\Links" name="header.links">
+                    <arguments>
+                        <argument name="css_class" xsi:type="string">header links</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Template" name="top.search" as="topSearch" template="Magento_Search::form.mini.phtml" />
+
+            </block>
+        </referenceContainer>
+		  <move element="navigation.sections" destination="my_header"/>
+		  <move element="logo" destination="my_header"/>
+	      <move element="top.search" destination="my_header"/>
+		  <move element="store_language" destination="my_header"/>
+		  <move element="skip_to_content" destination="my_header"/>
+			
+			<referenceContainer name="header.container" remove="1"/>
+			<referenceContainer name="header.panel" remove="1"/>
+			<referenceContainer name="header-wrapper" remove="1"/>
+		
+    </body>
+</page>

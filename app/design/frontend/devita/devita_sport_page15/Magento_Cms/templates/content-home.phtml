@@ -1,0 +1,18 @@
+<div class="main-container">
+	<?php echo $block->getLayout()->createBlock('Plazathemes\Bannerslider\Block\Bannerslider')->setTemplate('Plazathemes_Bannerslider::bannerslider.phtml')->toHtml();?>
+	<div class="ma-banner">
+		<div class="container-size">
+			<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('store_sport_banner_images1')->toHtml(); ?>
+		</div>
+	</div>
+	<div class="container-inner">
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Producttab\Block\Producttab')->setTemplate('Plazathemes_Producttab::producttab.phtml')->toHtml();?>
+		<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('store_sport_banner_text')->toHtml(); ?>
+		<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('store_sport_content_home')->toHtml(); ?>
+	</div>
+	<div class="container-inner">
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Blog\Block\Sidebar\Recent')->setTemplate('Plazathemes_Blog::sidebar/slider.phtml')->toHtml();?>
+	</div>
+</div>
+
+

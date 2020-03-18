@@ -1,0 +1,34 @@
+
+<div class="main-container">
+	<?php echo $block->getLayout()->createBlock('Plazathemes\Bannerslider\Block\Bannerslider')->setTemplate('Plazathemes_Bannerslider::bannerslider.phtml')->toHtml();?>
+	<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('store_digital_banner_images4')->toHtml(); ?>
+	<div class="container-inner">
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Producttab\Block\Producttab')->setTemplate('Plazathemes_Producttab::producttab.phtml')->toHtml();?>
+	</div>
+	<div class="content-products">
+		<div class="container-inner">
+			<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('store_digital_content_home1')->toHtml(); ?>
+		</div>	
+	</div>
+	<div class="proup-products">
+		<div class="container-inner">		
+			<div class="row">
+				<div class="col-sm-4">
+					<?php echo $block->getLayout()->createBlock('Plazathemes\Newproductslider\Block\Newproductslider')->setTemplate('Plazathemes_Newproductslider::newproductslider.phtml')->toHtml();?>
+				</div>
+				<div class="col-sm-4">
+					<?php echo $block->getLayout()->createBlock('Plazathemes\Bestsellerproduct\Block\Bestsellerproduct')->setTemplate('Plazathemes_Bestsellerproduct::bestsellerproduct.phtml')->toHtml();?>
+				</div>
+				<div class="col-sm-4">
+					<?php echo $block->getLayout()->createBlock('Plazathemes\Mostviewed\Block\Products')->setTemplate('Plazathemes_Mostviewed::productslider.phtml')->toHtml();?>	
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="container-inner">
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Brandslider\Block\Brandslider')->setTemplate('Plazathemes_Brandslider::brandslider.phtml')->toHtml();?>
+	</div>
+</div>
+
+

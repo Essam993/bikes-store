@@ -1,0 +1,131 @@
+<?php
+
+	$data = $block->getConfig('status');
+	//if(!$block->getConfig('status')) return ; 
+	$items = $block->getItemsActive();
+	$itemsActive = json_decode($items); 
+	$htmlLink = array();
+?>
+
+
+
+<?php if(count($itemsActive)): ?> 
+				
+		<div class="verticalmenu-container visible-lg visible-md">  
+			<!--<h3 class="megamenu-title"><span><?php //echo __('Category')?></span></h3>-->
+			<div id="pt_vmegamenu" class="pt_vmegamenu">
+				<?php
+				$showhome = 0;
+				$active = '';
+				$show_more = intval($block->getItemShow());
+				if($showhome){
+					$id     = "_home";
+					$html[] = '<div id="pt_menu' . $id . '" class="pt_menu' . $active . '">';
+					$html[] = '<div class="parentMenu">';
+					$html[] = '<a href="#">';
+					$html[] = '<span>Home</span>';
+					$html[] = '</a>';
+					$html[] = '</div>';
+					$html[] = '</div>';
+					$html = implode("\n", $html);
+					echo $html;
+				}
+	
+					$item = 0;
+		
+					$id = null; 
+					$label = null; 
+					foreach($itemsActive as $itemActive) { 
+							$item++;
+							$item1 =  explode( '_', $itemActive ) ;
+							$label = $item1[0]; 
+							$id = $item1[1];
+							 switch ($label) {
+								case "cms":							
+										echo $block->CmsLink($id,'desktop',$item);								
+									break;
+								case "block":			
+										// echo $block->CustomLink($id,'desktop');
+									break;
+								case "category":									
+										echo $block->drawCustomMenuItem($id,0,false,$item);											
+									break;
+								}
+					
+			
+						?>
+						
+						
+						
+						<?php																						
+
+					}
+						?>	
+					<?php
+						if($show_more < $item):
+						?>
+							<div id="show_more" class="show_more">
+								<span><?php echo __('More Categories') ?></span>
+							</div>
+						<?php
+						endif;
+					?>
+				
+			</div> 
+		</div>
+		 
+
+
+<?php endif ?>
+
+<script type="text/javascript">
+	require(["jquery"], function(jQuery){
+		jQuery('.pt_vmegamenu').addClass("default");
+		jQuery('.megamenu-title').click(function() {
+			jQuery('.pt_vmegamenu').toggle();
+		});
+	});
+	require(["jquery"], function($){
+
+
+	   var VMEGAMENU_POPUP_EFFECT = 2;
+
+
+		$("#pt_menu_link ul li").each(function(){
+			var url = document.URL;
+			$("#pt_menu_link ul li a").removeClass("act");
+			$('#pt_menu_link ul li a[href="'+url+'"]').addClass('act');
+		}); 
+		
+		$('#pt_vmegamenu #show_more').click(function(){
+			if($("#pt_vmegamenu #show_more").hasClass("show_more")){
+				$('#pt_vmegamenu .readmore').slideDown();
+				$('#pt_vmegamenu .show_more').removeClass('show_more')
+				$('#pt_vmegamenu #show_more').addClass('hide_more')
+				$('#pt_vmegamenu .hide_more span').text("<?php echo __('Close Menu') ?>")
+			}else{
+				$('#pt_vmegamenu .readmore').slideUp();
+				$('#pt_vmegamenu .hide_more').removeClass('hide_more')
+				$('#pt_vmegamenu #show_more').addClass('show_more')
+				$('#pt_vmegamenu .show_more span').text("<?php echo __('More Categories') ?>")
+			}
+			
+		})
+			
+		$('.pt_menu').hover(function(){
+			if(VMEGAMENU_POPUP_EFFECT == 0) $(this).find('.popup').stop(true,true).slideDown('slow');
+			if(VMEGAMENU_POPUP_EFFECT == 1) $(this).find('.popup').stop(true,true).fadeIn('slow');
+			if(VMEGAMENU_POPUP_EFFECT == 2) $(this).find('.popup').stop(true,true).show('slow');
+		},function(){
+			if(VMEGAMENU_POPUP_EFFECT == 0) $(this).find('.popup').stop(true,true).slideUp('fast');
+			if(VMEGAMENU_POPUP_EFFECT == 1) $(this).find('.popup').stop(true,true).fadeOut('fast');
+			if(VMEGAMENU_POPUP_EFFECT == 2) $(this).find('.popup').stop(true,true).hide('fast');
+		})
+		
+		
+
+		
+		
+		
+	});
+</script>

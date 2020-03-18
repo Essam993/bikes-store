@@ -1,0 +1,1228 @@
+<?xml version="1.0"?>
+<devita>
+    <blocks>
+	
+		<block>
+            <title>Contact us</title>
+            <identifier>contact_us</identifier>
+            <content>
+                    <![CDATA[
+						<div class="contact-us"><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6305.678625317825!2d-122.39957047637722!3d37.793805380191266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858063d63a0215%3A0xcba0af2dfe02048f!2s101+California+Street%2C+San+Francisco%2C+CA+94111%2C+Hoa+K%E1%BB%B3!5e0!3m2!1svi!2s!4v1419099932976" width="100%" height="350"></iframe></div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Footer Static</title>
+            <identifier>footer_static</identifier>
+            <content>
+                    <![CDATA[
+						<div class="footer-static">
+						<div class="row">
+						<div class="col-sm-4">
+						<h3 class="title">About Us</h3>
+						<p class="text">We are a team of designers and developers that create high quality Magento, Prestashop, Opencart [...].</p>
+						<p><a class="view-map" href="#"><i class="icon-map-pin"></i>View on map</a></p>
+						<div class="link-follow">
+						<ul>
+						<li class="facebook"><a title="facebook" href="#"><i class="icon-facebook"></i>face</a></li>
+						<li class="twitter"><a title="twitter" href="#"><i class="icon-twitter2"></i>twitter</a></li>
+						<li class="instagram"><a title="instagram" href="#"><i class="icon-instagram2"></i>instagram</a></li>
+						<li class="google"><a title="google" href="#"><i class="icon-google"></i>google</a></li>
+						<li class="rss"><a title="rss" href="#"><i class="icon-rss"></i>rss</a></li>
+						<li class="dribbble"><a title="dribbble" href="#"><i class="icon-dribbble"></i>dribbble</a></li>
+						<li class="vimeo"><a title="vimeo" href="#"><i class="icon-vimeo"></i>vimeo</a></li>
+						<li class="pinterest"><a title="pinterest" href="#"><i class="icon-pinterest"></i>pinterest</a></li>
+						<li class="skype"><a title="skype" href="#"><i class="icon-skype"></i>skype</a></li>
+						</ul>
+						</div>
+						</div>
+						<div class="col-sm-2">
+						<h3 class="title">Information</h3>
+						<ul>
+						<li><a href="#">Specials</a></li>
+						<li><a href="#">New products</a></li>
+						<li><a href="#">Top sellers</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Our stores</a></li>
+						<li><a href="#">Validation</a></li>
+						</ul>
+						</div>
+						<div class="col-sm-2">
+						<h3 class="title">My account</h3>
+						<ul>
+						<li><a href="#">My orders</a></li>
+						<li><a href="#">My credit slips</a></li>
+						<li><a href="#">My addresses</a></li>
+						<li><a href="#">My personal info</a></li>
+						<li><a href="#">Return Policy</a></li>
+						<li><a href="#">Our stores</a></li>
+						</ul>
+						</div>
+						<div class="col-sm-4">
+						<h3 class="title">Contact Us</h3>
+						<p>Address: 123 Main Street, Anytown, CA 12345 - USA.</p>
+						<p>Telephone Enquiry: (012) 800 456 789-987</p>
+						<p>Email: Contact@plazathemes.com</p>
+						<h3 class="title">Opening Time</h3>
+						<p>Open: <em>8:00 AM</em> - Close: <em>18:00 PM</em></p>
+						<p>Saturday - Sunday: Close</p>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Menu Links</title>
+            <identifier>pt_menu_links</identifier>
+            <content>
+                    <![CDATA[
+						<div class="pt_menu_link pt_menu">
+						<div class="parentMenu">
+						<ul class="mobilemenu">
+						<li><a href="http://www.plazathemes.com/">all stores</a></li>
+						<li><a href="{{store url="contact"}}">Contact Us</a></li>
+						<li><a href="{{store direct_url="about-magento-demo-store"}}">About us</a></li>
+						</ul>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Header Support</title>
+            <identifier>header_support</identifier>
+            <content>
+                    <![CDATA[
+						<p>Call us</p>
+						<p>Free Support: (012) 800 456 789</p>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Block Payments</title>
+            <identifier>block_payments</identifier>
+            <content>
+                    <![CDATA[
+						<p><img src="{{media url="wysiwyg/payment.png"}}" alt="" /></p>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Corporate About</title>
+            <identifier>corporate_about</identifier>
+            <content>
+                    <![CDATA[
+						<div class="static-info">
+						<div class="row">
+						<div class="col-sm-4">
+						<div class="box">
+						<h4>Free Shipping</h4>
+						<p>Free shipping on all order</p>
+						</div>
+						</div>
+						<div class="col-sm-4">
+						<div class="box">
+						<h4>Money Return</h4>
+						<p>Orders Support!</p>
+						</div>
+						</div>
+						<div class="col-sm-4">
+						<div class="box">
+						<h4>Online Support</h4>
+						<p>Support 24 hours a day</p>
+						</div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Header Top Discount</title>
+            <identifier>header_top</identifier>
+            <content>
+                    <![CDATA[
+						<div class="header-top">
+						<div class="container-inner">
+						<div class="des-content">
+						<p>Get free shipping and a worry - Free 30 day money back guarantee when you ! <a href="#">Shop Online</a></p>
+						<div class="close icon-x"></div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Link Footer</title>
+            <identifier>link_footer</identifier>
+            <content>
+                    <![CDATA[
+						<p><a href="#">Online Shopping</a> / <a href="#">Promotions</a> / <a href="#">My Orders</a> / <a href="#">Help</a> / <a href="#">Customer Service</a> / <a href="#">Support</a> / <a href="#">Most Populars</a> / <a href="#">New Arrivals</a> / <a href="#">Special Products</a> / <a href="#">Manufacturers</a> / <a href="#">Our Stores Shipping</a> / <a href="#">Payments</a> / <a href="#">Warantee</a> / <a href="#">Refunds</a> / <a href="#">Checkout</a> / <a href="#">Discount</a> / <a href="#">Terms &amp; Conditions</a> / <a href="#">Policy Shipping</a> / <a href="#">Returns</a> / <a href="#">Refunds</a></p>
+						<p class="payment"><img src="{{media url="wysiwyg/payment.png"}}" alt="" /></p>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Digital Banner Images1</title>
+            <identifier>store_digital_banner_images1</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home1">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/banner11.jpg"}}" alt="" /></a></div>
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/banner12.jpg"}}" alt="" /></a></div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Digital Content Home1</title>
+            <identifier>store_digital_content_home1</identifier>
+            <content>
+                    <![CDATA[
+						<div>{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Best Selling Products" identify="23234" category_id="145,146,147" items_default="3" items_desktop="3" items_desktop_small="1" items_tablet="1" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="2" show_pager="1" template="categorytab/grid.phtml" page_var_name="pbbmit"}}</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Digital Banner Text1</title>
+            <identifier>store_digital_banner_text1</identifier>
+            <content>
+                    <![CDATA[
+						<div class="text-inner">
+						<h3>Stay Connected When You’re Away<br /> From Your Phone</h3>
+						<p>Start the year off strong and explore how to track your activities,<br /> health, and fitness with Apple Watch and iPhone.</p>
+						<div class="price">$128.99</div>
+						<p><a class="button discover" href="#">discover now</a></p>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Digital Banner Images2</title>
+            <identifier>store_digital_banner_images2</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home2">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/home2_img1.jpg"}}" alt="" /></a></div>
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/home2_img2.jpg"}}" alt="" /></a></div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Digital Content Home2</title>
+            <identifier>store_digital_content_home2</identifier>
+            <content>
+                    <![CDATA[
+						<div>
+						<div class="banner-home3">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/home2_img4.jpg"}}" alt="" /></a></div>
+						</div>
+						{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Top Headphones" identify="232334" category_id="148,146,147" items_default="4" items_desktop="3" items_desktop_small="3" items_tablet="2" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="1" show_pager="1" template="categorytab/grid2.phtml" page_var_name="pbbmit"}}</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Digital Banner Images3</title>
+            <identifier>store_digital_banner_images3</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home3">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/home2_img3.jpg"}}" alt="" /></a></div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Digital Banner Images4</title>
+            <identifier>store_digital_banner_images4</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home4">
+						<div class="row">
+						<div class="col-md-6">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/digital3_img1.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-6">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/digital3_img2.jpg"}}" alt="" /></a></div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Footer Static 2</title>
+            <identifier>footer_static2</identifier>
+            <content>
+                    <![CDATA[
+						<div class="footer-static">
+						<div class="row">
+						<div class="col-sm-4">
+						<h3 class="title">About Us</h3>
+						<p class="text">We are a team of designers and developers that create high quality Magento, Prestashop, Opencart [...].</p>
+						<p>Address: 123 Main Street, Anytown, CA 12345 - USA.</p>
+						<p>Telephone Enquiry: (012) 800 456 789-987</p>
+						<p>Email: Contact@plazathemes.com</p>
+						<div class="link-follow">
+						<ul>
+						<li class="facebook"><a title="facebook" href="#"><i class="icon-facebook"></i>face</a></li>
+						<li class="twitter"><a title="twitter" href="#"><i class="icon-twitter2"></i>twitter</a></li>
+						<li class="instagram"><a title="instagram" href="#"><i class="icon-instagram2"></i>instagram</a></li>
+						<li class="google"><a title="google" href="#"><i class="icon-google"></i>google</a></li>
+						<li class="rss"><a title="rss" href="#"><i class="icon-rss"></i>rss</a></li>
+						<li class="dribbble"><a title="dribbble" href="#"><i class="icon-dribbble"></i>dribbble</a></li>
+						</ul>
+						</div>
+						</div>
+						<div class="col-sm-2">
+						<h3 class="title">Information</h3>
+						<ul>
+						<li><a href="#">Specials</a></li>
+						<li><a href="#">New products</a></li>
+						<li><a href="#">Top sellers</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Our stores</a></li>
+						<li><a href="#">Validation</a></li>
+						</ul>
+						</div>
+						<div class="col-sm-2">
+						<h3 class="title">My account</h3>
+						<ul>
+						<li><a href="#">My orders</a></li>
+						<li><a href="#">My credit slips</a></li>
+						<li><a href="#">My addresses</a></li>
+						<li><a href="#">My personal info</a></li>
+						<li><a href="#">Return Policy</a></li>
+						<li><a href="#">Our stores</a></li>
+						</ul>
+						</div>
+						<div class="col-sm-4">{{block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe" as="subscribe" before="-" template="subscribe.phtml"}}</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Digital Content Home4</title>
+            <identifier>store_digital_content_home4</identifier>
+            <content>
+                    <![CDATA[
+						<div>{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Top Headphones" identify="2327334" category_id="148,146,147" items_default="5" items_desktop="5" items_desktop_small="3" items_tablet="2" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="1" show_pager="1" template="categorytab/grid2.phtml" page_var_name="pbbmit"}}
+						<div class="banner-home5">
+						<div class="row">
+						<div class="col-md-8">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/home4_img1.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/home4_img2.jpg"}}" alt="" /></a></div>
+						</div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Medical Banner Images1</title>
+            <identifier>store_medical_banner_images1</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home5">
+						<div class="row">
+						<div class="col-md-6">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/medical_img1.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-6">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/medical_img2.jpg"}}" alt="" /></a></div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Medical Content1</title>
+            <identifier>store_medical_content1</identifier>
+            <content>
+                    <![CDATA[
+						<div>{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Best Selling Products" identify="23234" category_id="221,220,219" items_default="3" items_desktop="3" items_desktop_small="2" items_tablet="1" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="2" show_pager="1" template="categorytab/grid.phtml" page_var_name="pbbmit"}}</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Medical Content2</title>
+            <identifier>store_medical_content2</identifier>
+            <content>
+                    <![CDATA[
+						<div>{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Top Featured Products" identify="23273334" category_id="220,221" items_default="5" items_desktop="5" items_desktop_small="3" items_tablet="2" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="1" show_pager="1" template="categorytab/grid2.phtml" page_var_name="pbbmit"}}
+						<div class="banner-home5">
+						<div class="row">
+						<div class="col-md-6">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/medical_img3.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-6">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/medical_img4.jpg"}}" alt="" /></a></div>
+						</div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Book Banner Images1</title>
+            <identifier>store_book_banner_images1</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home1">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/img1.jpg"}}" alt="" /></a></div>
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/img2.jpg"}}" alt="" /></a></div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Book Banner Text1</title>
+            <identifier>store_book_banner_text1</identifier>
+            <content>
+                    <![CDATA[
+						<div class="text-inner">
+						<h3>How To Be An Explorer of The World</h3>
+						<p>The most popular and best-selling book of the year. Read it to see the true value of our lives, appreciate the things we have and the higher values in the future.</p>
+						<div class="price">Discounted: <strong>$68.99</strong></div>
+						<p><a class="button discover" href="#">discover now</a></p>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Book Banner Images2</title>
+            <identifier>store_book_banner_images2</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home3">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/img4.jpg"}}" alt="" /></a></div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Book Content Home1</title>
+            <identifier>store_book_content_home1</identifier>
+            <content>
+                    <![CDATA[
+						<div>
+						<div class="banner-home3">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/img5.jpg"}}" alt="" /></a></div>
+						</div>
+						{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Latest Book" identify="2323334" category_id="224,225" items_default="4" items_desktop="3" items_desktop_small="3" items_tablet="2" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="1" show_pager="1" template="categorytab/grid2.phtml" page_var_name="pbbmit"}}</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Book Banner Images3</title>
+            <identifier>store_book_banner_images3</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home5">
+						<div class="row">
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/book2_img1.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/book2_img2.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/book2_img3.jpg"}}" alt="" /></a></div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Book Content Home2</title>
+            <identifier>store_book_content_home2</identifier>
+            <content>
+                    <![CDATA[
+						<div>{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Featured Products" identify="23233334" category_id="224,225,226" items_default="5" items_desktop="4" items_desktop_small="3" items_tablet="2" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="1" show_pager="1" template="categorytab/grid2.phtml" page_var_name="pbbmit"}}</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Book Banner Images Time</title>
+            <identifier>store_book_banner_images_time</identifier>
+            <content>
+                    <![CDATA[
+						<p><img src="{{media url="wysiwyg/book2_img4.jpg"}}" alt="" /></p>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Coffee Banner Images1</title>
+            <identifier>store_coffee_banner_images1</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home5">
+						<div class="row">
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/img11.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/img21.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/img31.jpg"}}" alt="" /></a></div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Coffee Content Home1</title>
+            <identifier>store_coffee_content_home1</identifier>
+            <content>
+                    <![CDATA[
+						<div>{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Hot Coffee" identify="232933" category_id="186,187,185" items_default="5" items_desktop="4" items_desktop_small="3" items_tablet="2" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="1" show_pager="1" template="categorytab/grid2.phtml" page_var_name="pbbmit"}}</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Coffee Content Home2</title>
+            <identifier>store_coffee_content_home2</identifier>
+            <content>
+                    <![CDATA[
+						<div>{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Best Selling Products" identify="23234" category_id="187,186,214" items_default="3" items_desktop="3" items_desktop_small="2" items_tablet="1" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="2" show_pager="1" template="categorytab/grid.phtml" page_var_name="pbbmit"}}</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Coffee Banner Images2</title>
+            <identifier>store_coffee_banner_images2</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home2">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/img511.jpg"}}" alt="" /></a></div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Glasses Banner Images Time2</title>
+            <identifier>store_glasses_banner_images_time</identifier>
+            <content>
+                    <![CDATA[
+						<p><img src="{{media url="wysiwyg/sale_image.jpg"}}" alt="" /></p>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Footer Static3</title>
+            <identifier>footer_static3</identifier>
+            <content>
+                    <![CDATA[
+						<p>Address: 123 Main Street, Anytown, CA 12345 - USA. / Telephone Enquiry: (012) 800 456 789-987 / Email: Contact@plazathemes.com</p>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Watch Banner Images Time</title>
+            <identifier>store_watch_banner_images_time</identifier>
+            <content>
+                    <![CDATA[
+						<p><img src="{{media url="wysiwyg/img511.png"}}" alt="" /></p>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Watch Banner Images3</title>
+            <identifier>store_watch_banner_images3</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home5">
+						<div class="row">
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/img111.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/img112.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/img113.jpg"}}" alt="" /></a></div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Link Follow Header</title>
+            <identifier>link_follow_header</identifier>
+            <content>
+                    <![CDATA[
+						<div class="link-header">
+						<ul class="link-follow">
+						<li class="first"><a class="twitter fa fa-twitter" title="Twitter" href="https://twitter.com/plazathemes"><span>twitter</span></a></li>
+						<li><a class="google fa fa-google-plus" title="Google" href="#"><span>google </span></a></li>
+						<li><a class="facebook fa fa-facebook" title="Facebook" href="https://www.facebook.com/plazathemes1"><span>facebook</span></a></li>
+						<li><a class="youtube fa fa-youtube" title="Youtube" href="https://www.youtube.com/user/plazathemes"><span>youtube </span></a></li>
+						<li><a class="rss fa fa-rss" href="#"><span>rss</span></a></li>
+						</ul>
+						<p>Copyright © 2018 <a href="http://www.plazathemes.com/" target="_blank">PlazaThemes</a>. All Right Reserved.</p>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Game Content Home</title>
+            <identifier>store_game_content_home</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home5">
+						<div class="row">
+						<div class="col-md-6">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/game_img1.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-6">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/game_img2.jpg"}}" alt="" /></a></div>
+						</div>
+						</div>
+						</div>
+						<div>{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Featured Products" identify="2394" category_id="140,142,143" items_default="5" items_desktop="4" items_desktop_small="3" items_tablet="2" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="1" show_pager="1" template="categorytab/grid2.phtml" page_var_name="pbbmit"}}</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Game Banner Images1</title>
+            <identifier>store_game_banner_images1</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home3">
+						<div class="banner-box1"><a href="#"><img src="{{media url="wysiwyg/game_img3.jpg"}}" alt="" /></a></div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Game Banner Images2</title>
+            <identifier>store_game_banner_images2</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home3">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/game_img4.jpg"}}" alt="" /></a></div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Link Paypal</title>
+            <identifier>link_paypal</identifier>
+            <content>
+                    <![CDATA[
+						<p><img src="{{media url="wysiwyg/payment.png"}}" alt="" /></p>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Contruction Banner Images1</title>
+            <identifier>store_contruction_banner_images1</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home5">
+						<div class="row">
+						<div class="col-sm-3">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/contruction_img1.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-sm-6">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/contruction_img2.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-sm-3">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/contruction_img3.jpg"}}" alt="" /></a></div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Contruction Content Home</title>
+            <identifier>store_contruction_content_home</identifier>
+            <content>
+                    <![CDATA[
+						<div>{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Best Selling Products" identify="232394" category_id="119,121,132" items_default="3" items_desktop="3" items_desktop_small="2" items_tablet="1" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="2" show_pager="1" template="categorytab/grid.phtml" page_var_name="pbbmit"}}</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Contruction Banner Images2</title>
+            <identifier>store_contruction_banner_images2</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/contruction_img4.jpg"}}" alt="" /></a></div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Jewelry Banner Images1</title>
+            <identifier>store_jewelry_banner_images1</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home5">
+						<div class="row">
+						<div class="col-sm-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/jewelry_img1.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-sm-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/jewelry_img2.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-sm-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/jewelry_img3.jpg"}}" alt="" /></a></div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Jewelry Content Home</title>
+            <identifier>store_jewelry_content_home</identifier>
+            <content>
+                    <![CDATA[
+						<div>
+						<div class="banner-home3">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/jewelry_img4.jpg"}}" alt="" /></a></div>
+						</div>
+						{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Featured Products" identify="28334" category_id="209,210,212" items_default="5" items_desktop="4" items_desktop_small="3" items_tablet="2" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="1" show_pager="1" template="categorytab/grid2.phtml" page_var_name="pbbmit"}}</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Bike Banner Images1</title>
+            <identifier>store_bike_banner_images1</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home5">
+						<div class="row">
+						<div class="col-sm-4">
+						<div class="banner-box"><a href="{{store url="road-racing.html"}}"><img src="{{media url="wysiwyg/bike_img1.jpg"}}" alt="" /></a></div>
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/bike_img2.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-sm-4">
+						<div class="banner-box"><a href="{{store url="road-racing.html"}}"><img src="{{media url="wysiwyg/bike_img5.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-sm-4">
+						<div class="banner-box"><a href="{{store url="road-racing.html"}}"><img src="{{media url="wysiwyg/bike_img3.jpg"}}" alt="" /></a></div>
+						<div class="banner-box"><a href="{{store url="road-racing.html"}}"><img src="{{media url="wysiwyg/bike_img4.jpg"}}" alt="" /></a></div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Bike Content Home</title>
+            <identifier>store_bike_content_home</identifier>
+            <content>
+                    <![CDATA[
+						<div>{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Best Selling Products" identify="28334" category_id="128,127,126" items_default="4" items_desktop="4" items_desktop_small="3" items_tablet="2" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="1" show_pager="1" template="categorytab/grid2.phtml" page_var_name="pbbmit"}}</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Bike Banner Text</title>
+            <identifier>store_bike_banner_text</identifier>
+            <content>
+                    <![CDATA[
+						<div class="text-inner">
+						<h5>Bicycle</h5>
+						<p><img src="{{media url="wysiwyg/icon_static.png"}}" alt="" /></p>
+						<h3>Xduro FullSeven 6.0<br /> Zoll Silber 2018</h3>
+						<div class="price">Starting <strong>$128.99</strong></div>
+						<p><a class="button discover" href="http://demo.roadthemes.com/devita/bike/shop/">View detail</a></p>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Sport Banner Images1</title>
+            <identifier>store_sport_banner_images1</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home5">
+						<div class="row">
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/sport_img1.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/sport_img2.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/sport_img3.jpg"}}" alt="" /></a></div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Sport Banner Text</title>
+            <identifier>store_sport_banner_text</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-text">
+						<div class="row">
+						<div class="col-md-6">
+						<div class="text-inner">
+						<h5>Collection Sneaker 2018</h5>
+						<p><img src="{{media url="wysiwyg/icon_static1.png"}}" alt="" /></p>
+						<h3>Nike Free RN 2018 Men’s<br /> Running Shoe</h3>
+						<p>Discount 10% for all customers booked before <strong>12/14/2018</strong><br /> <a class="button discover" href="http://demo.roadthemes.com/devita/sport/shop/">View detail</a></p>
+						</div>
+						</div>
+						<div class="col-md-6">
+						<p><a href="#"><img src="{{media url="wysiwyg/sport_img4.jpg"}}" alt="" /></a></p>
+						</div>
+						</div>
+						<div class="row">
+						<div class="col-md-6">
+						<p><a href="#"><img src="{{media url="wysiwyg/sport_img5.jpg"}}" alt="" /></a></p>
+						</div>
+						<div class="col-md-6">
+						<div class="text-inner">
+						<h5>Collection Sneaker 2018</h5>
+						<p><img src="{{media url="wysiwyg/icon_static1.png"}}" alt="" /></p>
+						<h3>Nike Free RN 2018 Men’s<br /> Running Shoe</h3>
+						<p>Discount 10% for all customers booked before <strong>12/14/2018</strong><br /> <a class="button discover" href="http://demo.roadthemes.com/devita/sport/shop/">View detail</a></p>
+						</div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Sport Content Home</title>
+            <identifier>store_sport_content_home</identifier>
+            <content>
+                    <![CDATA[
+						<div>{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Best Selling Products" identify="28933" category_id="103,104,105" items_default="5" items_desktop="4" items_desktop_small="3" items_tablet="2" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="1" show_pager="1" template="categorytab/grid2.phtml" page_var_name="pbbmit"}}</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Fashion Banner Images1</title>
+            <identifier>store_fashion_banner_images1</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home5">
+						<div class="row">
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/fashion_img.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/fashion_img2.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/fashion_img3.jpg"}}" alt="" /></a></div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Corporate About 2</title>
+            <identifier>corporate_about_2</identifier>
+            <content>
+                    <![CDATA[
+						<div class="static-info2">
+						<div class="row">
+						<div class="col-sm-4">
+						<p>SALE UP TO <strong>60% Off</strong> OFF ON ALL JEANS ONLY THIS WEEK</p>
+						</div>
+						<div class="col-sm-4">
+						<p>FREE <strong>30 day</strong> MONEY BACK GUARANTEE</p>
+						</div>
+						<div class="col-sm-4">
+						<p>SALE UP TO <strong>20% Off</strong> OFF ON SMARTPHONES</p>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Fashion Banner Text</title>
+            <identifier>store_fashion_banner_text</identifier>
+            <content>
+                    <![CDATA[
+						<div class="text-inner">
+						<p>We are a team of designers and developers that</p>
+						<p>create high quality Magento, Prestashop, Opencart themes and provide</p>
+						<p>premium and dedicated support to our products.</p>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Fashion Content Home</title>
+            <identifier>store_fashion_content_home</identifier>
+            <content>
+                    <![CDATA[
+						<div>{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Best Selling Products" identify="28933" category_id="77,107,97" items_default="5" items_desktop="4" items_desktop_small="3" items_tablet="2" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="1" show_pager="1" template="categorytab/grid2.phtml" page_var_name="pbbmit"}}</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Furnilife Banner Images1</title>
+            <identifier>store_furnilife_banner_images1</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home5">
+						<div class="row">
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/furnilife_img1.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/furnilife_img2.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/furnilife_img3.jpg"}}" alt="" /></a></div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Furnilife Banner Images2</title>
+            <identifier>store_furnilife_banner_images2</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home">
+						<div class="row">
+						<div class="col-md-6">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/furnilife_img4.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-6">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/furnilife_img5.jpg"}}" alt="" /></a></div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Furnilife Content Home</title>
+            <identifier>store_furnilife_content_home</identifier>
+            <content>
+                    <![CDATA[
+						<div>{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Best Selling Products" identify="6933" category_id="96,95,94" items_default="3" items_desktop="2" items_desktop_small="2" items_tablet="1" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="2" show_pager="1" template="categorytab/grid.phtml" page_var_name="pbbmit"}}</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Autoparts Banner Images1</title>
+            <identifier>store_autoparts_banner_images1</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home5">
+						<div class="row">
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/auto_img1.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/auto_img2.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/auto_img3.jpg"}}" alt="" /></a></div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Autoparts Banner Images2</title>
+            <identifier>store_autoparts_banner_images2</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home5">
+						<div class="row">
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/auto_img4.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/auto_img5.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/auto_img6.jpg"}}" alt="" /></a></div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Sore Autoparts Content Home1</title>
+            <identifier>store_autoparts_content_home1</identifier>
+            <content>
+                    <![CDATA[
+						<div>{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Best Selling Products" identify="2934" category_id="88,82,86" items_default="3" items_desktop="3" items_desktop_small="1" items_tablet="1" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="2" show_pager="1" template="categorytab/grid.phtml" page_var_name="pbbmit"}}</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Autoparts Banner Text1</title>
+            <identifier>store_autoparts_banner_text1</identifier>
+            <content>
+                    <![CDATA[
+						<div class="row">
+						<div class="col-md-5">
+						<div class="box-text">
+						<h6>LOOKING FOR AUTOMOTIVE SERVICES?</h6>
+						<h4>CALL OUR SEVICE CENTER</h4>
+						<h3>+(012) 800 456 789</h3>
+						<h5>What ever the service, we have you covered.</h5>
+						<p><a class="button" href="#">contact now</a></p>
+						</div>
+						</div>
+						<div class="col-md-7"><img src="{{media url="wysiwyg/auto_img7.jpg"}}" alt="" /></div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Organic Content Home1</title>
+            <identifier>store_organic_content_home1</identifier>
+            <content>
+                    <![CDATA[
+						<div>{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Best Selling Products" identify="2374" category_id="76,74,73" items_default="3" items_desktop="3" items_desktop_small="1" items_tablet="1" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="2" show_pager="1" template="categorytab/grid.phtml" page_var_name="pbbmit"}}</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Organic Content Home2</title>
+            <identifier>store_organic_content_home2</identifier>
+            <content>
+                    <![CDATA[
+						<div>
+						<div class="banner-home3">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/organic_img2.jpg"}}" alt="" /></a></div>
+						</div>
+						{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Top Fruit" identify="232334" category_id="72,71,73" items_default="4" items_desktop="3" items_desktop_small="3" items_tablet="2" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="1" show_pager="1" template="categorytab/grid2.phtml" page_var_name="pbbmit"}}</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Organic Banner Images1</title>
+            <identifier>store_organic_banner_images1</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home3">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/organic_img1.jpg"}}" alt="" /></a></div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Organic Banner Images2</title>
+            <identifier>store_organic_banner_images2</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home5">
+						<div class="row">
+						<div class="col-md-6">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/organic_img3.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-6">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/organic_img4.jpg"}}" alt="" /></a></div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Petmarket Banner Images1</title>
+            <identifier>store_petmarket_banner_images1</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home5">
+						<div class="row">
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/pet_img1.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/pet_img2.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-md-4">
+						<div class="banner-box"><a href="#"><img src="{{media url="wysiwyg/pet_img3.jpg"}}" alt="" /></a></div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Petmarket Content Home1</title>
+            <identifier>store_petmarket_content_home1</identifier>
+            <content>
+                    <![CDATA[
+						<div>{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Hot Petmarket" identify="1633" category_id="67,68,69" items_default="5" items_desktop="4" items_desktop_small="3" items_tablet="2" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="1" show_pager="1" template="categorytab/grid2.phtml" page_var_name="pbbmit"}}</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Store Petmarket Content Home2</title>
+            <identifier>store_petmarket_content_home2</identifier>
+            <content>
+                    <![CDATA[
+						<div>{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Best Selling Products" identify="2384" category_id="66,67,68" items_default="3" items_desktop="3" items_desktop_small="2" items_tablet="1" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="2" show_pager="1" template="categorytab/grid.phtml" page_var_name="pbbmit"}}</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+					
+    </blocks>
+</devita>

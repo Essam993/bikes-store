@@ -1,0 +1,42 @@
+<div class="main-container">
+	<div class="container-inner">
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Bannerslider\Block\Bannerslider')->setTemplate('Plazathemes_Bannerslider::bannerslider.phtml')->toHtml();?>
+		<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('store_autoparts_banner_images1')->toHtml(); ?>
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Featureproductslider\Block\Featureproductslider')->setTemplate('Plazathemes_Featureproductslider::featureproductslider.phtml')->toHtml();?>
+		<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('store_autoparts_banner_images2')->toHtml(); ?>
+		<div class="banner-text">
+			<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('store_autoparts_banner_text1')->toHtml(); ?>	
+		</div>
+	</div>
+
+	<div class="content-products">
+		<div class="container-inner">
+			<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('store_autoparts_content_home1')->toHtml(); ?>
+		</div>	
+	</div>
+	<div class="container-inner">
+		<div class="ma-newsletter">
+			<div class="des-content">
+				<?php echo $block->getLayout()->createBlock('Magento\Newsletter\Block\Subscribe')->setTemplate('Magento_Newsletter::subscribe.phtml')->toHtml();?>
+			</div>
+		</div>
+	</div>
+	<div class="proup-products">
+		<div class="container-inner">		
+			<div class="row">
+				<div class="col-sm-6">
+					<?php echo $block->getLayout()->createBlock('Plazathemes\Recentproductslider\Block\Products')->setTemplate('Plazathemes_Recentproductslider::productslider.phtml')->toHtml();?>	
+				</div>
+				<div class="col-sm-6">
+					<?php echo $block->getLayout()->createBlock('Plazathemes\Blog\Block\Sidebar\Recent')->setTemplate('Plazathemes_Blog::sidebar/slider.phtml')->toHtml();?>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-inner">
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Brandslider\Block\Brandslider')->setTemplate('Plazathemes_Brandslider::brandslider.phtml')->toHtml();?>
+	</div>
+	
+</div>
+
+

@@ -1,0 +1,122 @@
+<?php
+/**
+ * Copyright © 2015 PlazaThemes.com. All rights reserved.
+
+ * @author PlazaThemes Team <contact@plazathemes.com>
+ */
+if($this->getConfig('enable_frontend')):
+	$_imagehelper = $this->helper('Magento\Catalog\Helper\Image');
+	$image = 'category_page_grid';
+	$_productHelper = $this->helper('Magento\Catalog\Helper\Product');
+	$block = $this->getBlockProduct();
+ 
+	$auto = $this->getConfig('auto');
+	if($auto)
+		$auto = 'true';
+	else
+		$auto = 'false';
+	$default = $this->getConfig('default');
+	$desktop = $this->getConfig('desktop');
+	$desktop_small = $this->getConfig('desktop_small');
+	$tablet = $this->getConfig('tablet');
+	$mobile = $this->getConfig('mobile');
+	$rows = $this->getConfig('rows');
+	$show_next_back = $this->getConfig('show_next_back');
+	$pagination = $this->getConfig('pagination');
+	if($this->getConfig('speed'))
+		$speed = $this->getConfig('speed');
+	else
+		$speed = '3000';
+	if($show_next_back)
+		$show_next_back = 'true';
+	else
+		$show_next_back = 'false';
+	$show_navigation_control = $this->getConfig('show_navigation_control');
+	if($show_navigation_control)
+		$show_navigation_control = 'true';
+	else
+		$show_navigation_control = 'false';
+?>
+<div class="pt-mostviewedproduct-container">
+	<div class="ma-title"><h3><?php echo $this->getConfig('title') ?></h></div>
+	<?php
+	if(!count($this->getProducts())){
+	?>
+	<div class="ma-mostviewed-slider">	
+		<p class="note-msg"><?php echo __('There are no products matching the selection.') ?></p>
+	</div>
+	<?php
+	}else{
+	?>
+	<ul class="ptowl">
+	<?php
+	$i = 0;
+	foreach($this->getProducts() as $_product)
+	{
+	if($i%$rows == 0):
+	?>
+		<li class="product-items">
+	<?php
+	endif;
+			$productImage = $_imagehelper->init($_product, $image)->constrainOnly(FALSE)->keepAspectRatio(TRUE)->keepFrame(FALSE)->resize(400)->getUrl();
+		?>
+		
+		<div class="item-inner">
+			<div class="image-container pull-left">	
+				<a href="<?php echo $_product->getProductUrl() ?>"><img src="<?php echo $productImage; ?>" alt=""/></a>
+			</div>
+			<div class="des media-body">
+				<div class="product-name">
+					<a href="<?php echo $_product->getProductUrl() ?>"><?php echo $_product->getName() ?></a>
+				</div>
+				<?php
+					echo $block->getProductPrice($_product)
+				?>
+			</div>
+		</div>
+	<?php if($i%$rows == $rows - 1): ?>
+		</li>
+	<?php
+	endif;
+	$i++;
+	}
+	?>
+	</ul>
+	<?php
+	}
+	?>
+</div>
+<script type="text/javascript">
+	require([
+		"jquery",
+		"owlcarousel/minjs"
+	], function($){
+		$(document).ready(function(){
+			$(".pt-mostviewedproduct-container .ptowl").owlCarousel({
+				<?php
+					if(($auto== 'true') && $speed):
+				?>
+				autoPlay : <?php echo $speed; ?>,
+				<?php
+					endif;
+				?>
+				items : 1,
+				itemsDesktop : [1199,1],
+				itemsDesktopSmall : [992,1],
+				itemsTablet: [767,2],
+				itemsMobile : [479,1],
+				slideSpeed : <?php echo $pagination; ?>,
+				paginationSpeed : <?php echo $pagination; ?>,
+				rewindSpeed : <?php echo $pagination; ?>,
+				addClassActive: true,
+				navigation : <?php echo $show_next_back; ?>,
+				stopOnHover : true,
+				pagination : <?php echo $show_navigation_control; ?>,
+				scrollPerPage:true,
+			});
+		});
+	});
+</script>
+<?php
+endif;
+?>

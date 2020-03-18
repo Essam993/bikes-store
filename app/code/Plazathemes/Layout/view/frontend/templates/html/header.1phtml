@@ -1,0 +1,16 @@
+<h2> this is my header</h2>
+<div id="my_header_link">
+
+	<?php echo $this->getChildHtml("logo"); ?>
+	<div id="navigation_link">
+	 <?php echo $this->getChildHtml("navigation.sections"); ?>
+	 </div>
+	 <?php echo $this->getChildHtml("top.search"); ?>
+	 <?php echo $this->getChildHtml("store_language"); ?>
+	 <div id="top_link">
+			    <?php echo $this->getChildHtml("skip_to_content"); ?>
+                <?php echo $this->getChildHtml("header.links"); ?>
+	 </div>
+
+</div>
+<h2> End my headerw</h2>

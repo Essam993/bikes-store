@@ -1,0 +1,27 @@
+
+<div class="main-container">
+	<?php echo $block->getLayout()->createBlock('Plazathemes\Bannerslider\Block\Bannerslider')->setTemplate('Plazathemes_Bannerslider::bannerslider.phtml')->toHtml();?>
+	<div class="ma-corporate-about">
+		<div class="container-inner">
+			<div class="corporate-about">
+				<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('corporate_about')->toHtml(); ?>
+			</div>
+		</div>
+	</div>
+	<div class="container-inner">
+		<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('store_contruction_banner_images1')->toHtml(); ?>
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Producttab\Block\Producttab')->setTemplate('Plazathemes_Producttab::producttab.phtml')->toHtml();?>
+	</div>
+	<div class="content-products">
+		<div class="container-inner">
+			<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('store_contruction_content_home')->toHtml(); ?>
+		</div>	
+	</div>
+	<div class="container-inner">
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Featureproductslider\Block\Featureproductslider')->setTemplate('Plazathemes_Featureproductslider::featureproductslider.phtml')->toHtml();?>
+		<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('store_contruction_banner_images2')->toHtml(); ?>
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Brandslider\Block\Brandslider')->setTemplate('Plazathemes_Brandslider::brandslider.phtml')->toHtml();?>
+	</div>
+</div>
+
+

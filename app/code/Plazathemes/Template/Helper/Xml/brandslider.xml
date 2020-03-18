@@ -1,0 +1,53 @@
+<?xml version="1.0" standalone="yes"?>  
+<brandslider>
+<records>
+    <record>
+        <title></title>
+        <link>#</link>
+        <image><![CDATA[Plazathemes/brandslider/images/b/r/br1.png]]></image>
+        <description></description>
+        <status>1</status>
+		<store_id>1</store_id>
+    </record>
+	<record>
+        <title></title>
+        <link>#</link>
+        <image><![CDATA[Plazathemes/brandslider/images/b/r/br2.png]]></image>
+        <description></description>
+        <status>1</status>
+		<store_id>1</store_id>
+    </record>
+	<record>
+        <title></title>
+        <link>#</link>
+        <image><![CDATA[Plazathemes/brandslider/images/b/r/br3.png]]></image>
+        <description></description>
+        <status>1</status>
+		<store_id>1</store_id>
+    </record>
+	<record>
+        <title></title>
+        <link>#</link>
+        <image><![CDATA[Plazathemes/brandslider/images/b/r/br4.png]]></image>
+        <description></description>
+        <status>1</status>
+		<store_id>1</store_id>
+    </record>
+	<record>
+        <title></title>
+        <link>#</link>
+        <image><![CDATA[Plazathemes/brandslider/images/b/r/br5.png]]></image>
+        <description></description>
+        <status>1</status>
+		<store_id>1</store_id>
+    </record>
+	<record>
+        <title></title>
+        <link>#</link>
+        <image><![CDATA[Plazathemes/brandslider/images/b/r/br3_1.png]]></image>
+        <description></description>
+        <status>1</status>
+		<store_id>1</store_id>
+    </record>	
+</records>
+</brandslider>

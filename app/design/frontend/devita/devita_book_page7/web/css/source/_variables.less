@@ -1,0 +1,106 @@
+//  Fonts
+@font-family-name__base: 'Open Sans';
+@font-family__sans-serif: 'Open Sans';
+@font-family__base: @font-family-name__base, @font-family__sans-serif;
+
+@headingfont:'Rubik', sans-serif;
+@bodyfont: 'Rubik', sans-serif;
+//
+//  Sidebar
+//  ---------------------------------------------
+@color-white-smoke:#fff;
+@color-gray56:gray;
+@sidebar__background-color: @color-white-smoke;  // Used in cart sidebar, Checkout sidebar, Tier Prices, My account navigation, Rating block background
+
+@copyright__background-color: @color-gray56;
+
+
+// gerenal color
+@general_bg_color:#FFFFFF;
+@general_title_color:#252525;
+@general_text_color:#666666;
+@general_link_color:#252525;
+@general_link_hover_color:#09c6ab;
+@general_price_color:#09c6ab;
+@general_old_price_color:#999999;
+@general_border_color:#F1F1F1;
+@general_product_name_color:#252525;
+@general_new_label_color:#45D8BB;
+@general_sale_label_color:#45D8BB;
+@header_bg_color:#F1F1F1;
+@header_link_color:#777777;
+@footer_top_bg_color:#323A45;
+@footer_top_title_color:#FFFFFF;
+@footer_top_text_color:#FFFFFF;
+@footer_top_link_color:#FFFFFF;
+@footer_bottom_bg_color:#2B313B;
+@footer_bottom_text_color:#FFFFFF;
+@footer_bottom_link_color:#45D8BB;
+
+.noneTextSelect() {
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */      
+}
+
+.transition (@transition: 0.4s) {
+	-webkit-transition: all @transition ease-out;  
+	-moz-transition:    all @transition ease-out;
+	-ms-transition:     all @transition ease-out; 
+	-o-transition:      all @transition ease-out;  
+}
+
+.scale (@factor) {
+	-webkit-transform: scale(@factor);
+	-moz-transform: 	 scale(@factor);
+	-ms-transform: 		 scale(@factor);
+	-o-transform: 		 scale(@factor);
+}
+.scaleY (@factor) {
+	-webkit-transform: scaleY(@factor);
+	-moz-transform: 	 scaleY(@factor);
+	-ms-transform: 		 scaleYscaleY(@factor);
+	-o-transform: 		 scaleY(@factor);
+}
+.opacity (@opacity) {
+	-webkit-opacity: 	@opacity;
+	-moz-opacity: 		@opacity;
+	opacity: 		@opacity;
+}
+.rotate (@deg) {
+	-webkit-transform: rotate(@deg);
+	-moz-transform: 	 rotate(@deg);
+	-ms-transform: 		 rotate(@deg);
+	-o-transform: 		 rotate(@deg);
+}
+.translate (@x, @y:0) {
+	transform:   translate(@x, @y);
+	-webkit-transform:   translate(@x, @y);
+	-moz-transform: 	 translate(@x, @y);
+	-ms-transform: 		 translate(@x, @y);
+	-o-transform: 		 translate(@x, @y);
+}
+
+.bg_gradient (@bottom, @left) {
+	background: linear-gradient(bottom left, @bottom, @left);
+    background: -webkit-linear-gradient(bottom left, @bottom, @left);
+    background: -moz-linear-gradient(bottom left, @bottom, @left);
+    background: -o-linear-gradient(bottom left, @bottom, @left); 
+}
+
+@-webkit-keyframes bounceIn{
+
+	0%{opacity:0;-webkit-transform:scale(.3);transform:scale(.3)}
+	50%{opacity:1;-webkit-transform:scale(1.2);transform:scale(1.2)} 
+	100%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}
+	}
+	
+@keyframes bounceIn{
+	
+	0%{opacity:0;-webkit-transform:scale(.3);-ms-transform:scale(.3);transform:scale(.3)}
+	50%{opacity:1;-webkit-transform:scale(1.2);-ms-transform:scale(1.2);transform:scale(1.2)} 
+	100%{opacity:1;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}
+}
+	
+	.bounceIn {-webkit-animation-name:bounceIn;animation-name:bounceIn }

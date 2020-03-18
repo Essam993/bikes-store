@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+* Copyright © 2015 PlazaThemes.com. All rights reserved.
+
+* @author PlazaThemes Team <contact@plazathemes.com>
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+ 
+        <add id="Plazathemes_Randomproductslider::randomproductslider" title="Random product slider" module="Plazathemes_Randomproductslider" sortOrder="10" parent="Plazathemes_Hozmegamenu::hozmegamenu" resource="Plazathemes_Hozmegamenu::hozmegamenu"/>
+
+        <add id="Plazathemes_Randomproductslider::settings" title="Settings" module="Plazathemes_Randomproductslider" sortOrder="20" parent="Plazathemes_Randomproductslider::randomproductslider" action="adminhtml/system_config/edit/section/randomproductslider" resource="Plazathemes_Randomproductslider::settings"/>
+    </menu>
+</config>

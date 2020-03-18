@@ -1,0 +1,42 @@
+<?php 
+$block->renderFileLessToCss(); 
+?>
+<div id="lucian_header" class="header-container">
+	<div class="top-link header-link">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-xs-12">
+					<?php echo $this->getChildHtml("store_language"); ?>
+					<?php echo $this->getChildHtml("header_info"); ?>
+				</div>
+				<div class="col-md-6 col-xs-12">
+					<div class="top-link-dropdown">
+						<?php echo $this->getChildHtml("header.links"); ?>
+					</div>
+					 <?php echo $this->getChildHtml("currency"); ?>
+					 <?php echo $this->getChildHtml("header_social"); ?>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-middle">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-xs-12">
+					<?php echo $this->getChildHtml("top.search"); ?>
+				</div>
+				<div class="col-md-6 col-xs-12">
+					<div class="logo-home">
+						<?php echo $this->getChildHtml("logo"); ?>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-12">
+					<?php echo $this->getChildHtml("minicart");?>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+</div>
+

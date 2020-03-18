@@ -1,0 +1,26 @@
+
+<div class="main-container">
+	<?php echo $block->getLayout()->createBlock('Plazathemes\Bannerslider\Block\Bannerslider')->setTemplate('Plazathemes_Bannerslider::bannerslider.phtml')->toHtml();?>
+	<div class="container-inner">
+		<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('store_coffee_banner_images1')->toHtml(); ?>
+		<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('store_coffee_content_home1')->toHtml(); ?>
+	</div>
+	<div class="ma-testimonial">
+		<div class="container-inner">
+			<div class="col-md-7 col-md-offset-5">
+				<?php echo $block->getLayout()->createBlock('Plazathemes\Testimonial\Block\Testimonial')->setTemplate('Plazathemes_Testimonial::testimonial.phtml')->toHtml();?>
+			</div>
+		</div>
+	</div>
+	<div class="content-products">
+		<div class="container-inner">
+			<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('store_coffee_content_home2')->toHtml(); ?>
+		</div>	
+	</div>
+	<div class="container-inner">
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Featureproductslider\Block\Featureproductslider')->setTemplate('Plazathemes_Featureproductslider::featureproductslider.phtml')->toHtml();?>
+		<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('store_coffee_banner_images2')->toHtml(); ?>
+	</div>
+</div>
+
+

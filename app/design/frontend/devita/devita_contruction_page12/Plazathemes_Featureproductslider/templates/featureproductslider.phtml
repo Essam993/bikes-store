@@ -1,0 +1,177 @@
+<?php 
+	$enable = $block->getConfig('enabled');
+	if($enable < 1) return ; 
+	$items = $block->getConfig('items');
+	$speed = $block->getConfig('speed');
+	$qty = $block->getConfig('qty');
+	$showCart =  1;
+	$showWishlist = 1;
+	$showCompare = 1;
+	$show_navigation = 0;
+	$show_pagination = $block->getConfig('pagination');
+	$auto = $block->getConfig('auto');
+	$rows = 1;
+	
+?>
+
+<div class="featureproduct-slider">
+			<div class="ma-title">
+				<h3><span><?php echo __('Featured Products'); ?> </span></h3>
+			</div>
+			<div class="feature-container">
+					<?php 
+					$newItems =  $block -> getFeaturedProduct()->getItems(); 
+					$imageBlock =  $block->getLayout()->createBlock('Magento\Catalog\Block\Product\Image');
+					$image = 'new_products_content_widget_grid';
+					$type = 'widget-new-grid';
+					$templateType = \Magento\Catalog\Block\Product\ReviewRendererInterface::DEFAULT_VIEW;
+					$i = 0;
+					foreach($newItems as $_item) { 
+						$productImage = $block->getImage($_item, $image);
+					?>
+					<?php if($i++%$rows==0) { ?> <div class="products-grid"> <?php } ?>
+							<div class="product-item">
+								<div class="product-item-info">						
+										<div class=" product-item-images">
+
+											<?php
+												$newFromDate = $_item->getNewsFromDate();
+												$newToDate = $_item->getNewsToDate();                
+												$now = date("Y-m-d H:m:s");
+												// Get the Special Price
+												$specialprice = $_item->getSpecialPrice(); 
+												// Get the Special Price FROM date
+												$specialPriceFromDate = $_item->getSpecialFromDate();
+												// Get the Special Price TO date
+												$specialPriceToDate = $_item->getSpecialToDate();
+												// Get Current date
+												if ($specialprice&&(($specialPriceFromDate <= $now && $specialPriceToDate >= $now) || (($specialPriceFromDate <= $now && $specialPriceFromDate != NULL) && $specialPriceToDate  == ''))){
+												$_savePercent = 100 - round(($_item->getSpecialPrice() / $_item->getPrice())*100);
+												echo "<span class='hot-sale'>-".$_savePercent."%</span>";
+												}else{
+												if((($newFromDate <= $now && $newToDate >= $now) || (($newFromDate <= $now && $newFromDate != NULL) && $newToDate == NULL))) {
+												?>
+												<div class="label-pro-new"><span><?php echo __('new') ?></span></div>
+												<?php
+												}
+												}
+											?>
+										
+											<a href="<?php echo $block->getProductUrl($_item) ?>" class="product-item-photo">
+											<?php echo $productImage->toHtml() ?>
+											</a>
+											
+										</div>										
+										<div class="product-item-details">
+											<strong class="product-item-name">
+												<a title="<?php echo $block->escapeHtml($_item->getName()) ?>"
+												   href="<?php echo $block->getProductUrl($_item) ?>"
+												   class="product-item-link">
+													<?php echo $block->escapeHtml($_item->getName()) ?>
+												</a>
+											</strong>
+											
+											<?php echo $block->getProductPrice($_item); ?>
+											<div class="box-hover">
+												<?php echo $block->getReviewsSummaryHtml($_item, $templateType,true); ?>
+												<div class="product-item-description">
+													<p>
+													<?php 
+														$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+														$product = $objectManager->create('Magento\Catalog\Model\Product')->load($_item->getId());
+														$shortdes = $product->getShortDescription();
+														if(strlen($shortdes) > 100){
+														 $shortdes = substr($shortdes, 0, 100);
+														 echo strip_tags($shortdes).'...';
+														}else{
+														 echo strip_tags($shortdes);
+														}
+												   ?>
+												   </p>
+											   </div>
+												<div class="product-item-actions">
+													<div class="add-to-links-secondary">
+														<?php if ($this->helper('Magento\Wishlist\Helper\Data')->isAllow() && $showWishlist): ?>
+														<a href="#"
+														   data-post='<?php echo $block->getAddToWishlistParams($_item); ?>'
+														   class="action wishlist" data-action="add-to-wishlist"
+														   title="<?php echo __('Add to Wishlist') ?>">
+															<span><?php echo __('Add to Wishlist') ?></span>
+														</a>
+														<?php endif; ?>
+														
+														<div class="add-to-cart-primary">
+															<?php if ($_item->isSaleable()): ?>
+																<?php if ($_item->getTypeInstance()->hasRequiredOptions($_item)): ?>
+																	<button class="action tocart primary"
+																			data-mage-init='{"redirectUrl":{"url":"<?php echo $block->getAddToCartUrl($_item) ?>"}}'
+																			type="button" title="<?php echo __('Add to Cart') ?>">
+																		<span><?php echo __('Add to Cart') ?></span>
+																	</button>
+																<?php else: ?>
+																	<?php
+																		$postDataHelper = $this->helper('Magento\Framework\Data\Helper\PostHelper');
+																		$postData = $postDataHelper->getPostData($block->getAddToCartUrl($_item), ['product' => $_item->getEntityId()])
+																	?>
+																	<button class="action tocart primary"
+																			data-post='<?php echo $postData; ?>'
+																			type="button" title="<?php echo __('Add to Cart') ?>">
+																		<span><?php echo __('Add to Cart') ?></span>
+																	</button>
+																<?php endif; ?>
+															<?php else: ?>
+																<?php if ($_item->getIsSalable()): ?>
+																	<div class="stock available"><span><?php echo __('In stock') ?></span></div>
+																<?php else: ?>
+																	<div class="stock unavailable"><span><?php echo __('Out of stock') ?></span></div>
+																<?php endif; ?>
+															<?php endif; ?>
+													
+														</div>
+													
+													
+														<?php if ($block->getAddToCompareUrl() && $showCompare): ?>
+															<?php $compareHelper = $this->helper('Magento\Catalog\Helper\Product\Compare');?>
+															<a href="#" class="action compare"
+															   data-post='<?php echo $compareHelper->getPostDataParams($_item);?>'
+															   title="<?php echo __('Add to Compare') ?>">
+																<span><?php echo __('Add to Compare') ?></span>
+															</a>
+														<?php endif; ?>
+													</div>
+												</div>
+											</div>
+										
+											
+																				
+										</div>	
+								</div>	
+							</div>
+						<?php if($i%$rows==0 || $i == count($newItems)) { ?> </div> <?php }?>
+					<?php 
+					}
+					?>
+			</div>
+</div>
+<script type="text/javascript">
+require([
+  "jquery",
+  "owlcarousel/minjs"
+ ], function($,owlCarousel){
+	
+   $(".feature-container").owlCarousel( {
+		items : <?php if($items) { echo $items; } else { echo 5; }?>,
+		autoPlay : <?php if($auto) echo 'true'; else echo 'false'; ?>,
+		slideSpeed : <?php if($speed) echo $speed; else echo '500'; ?>,
+		navigation : true,
+		stopOnHover : true,
+		pagination : <?php if($show_pagination) echo 'true'; else echo 'false'; ?>,
+		items : 5,
+		itemsDesktop : [1199,4],
+		itemsDesktopSmall : [992,3],
+		itemsTablet: [767,2],
+		itemsMobile : [479,1]
+   });
+   
+});
+</script>   
